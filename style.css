@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #141821;
+  color: #f3eee4;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container-cambio {
+  max-width: 780px;
+  margin: 0 auto;
+  background-color: #1c2230;
+  border: 1px solid rgba(243, 238, 228, 0.14);
+  border-radius: 10px;
+  padding: 28px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 6px;
+}
+
+.subtitulo-cambio {
+  font-size: 0.95rem;
+  color: rgba(243, 238, 228, 0.78);
+  margin-bottom: 22px;
+}
+
+.formulario-moeda {
+  margin-bottom: 14px;
+}
+
+.formulario-moeda label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.linha-moeda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.linha-moeda input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #6c757d;
+  background-color: #12161f;
+  color: #f3eee4;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.linha-moeda button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c48b45;
+  color: #141820;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.linha-moeda button:hover {
+  background-color: #dca35c;
+}
+
+#botao-atualizar {
+  background-color: transparent;
+  color: #f3eee4;
+  border: 1px solid rgba(243, 238, 228, 0.28);
+}
+
+.status-cambio {
+  min-height: 20px;
+  font-size: 0.9rem;
+  color: #e6b36a;
+  margin-bottom: 18px;
+}
+
+.grade-cotacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(243, 238, 228, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card.favorita {
+  border-color: #e6b36a;
+}
+
+.topo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.valor-cotacao {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7cd992;
+}
+
+.acoes-card {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.acoes-card button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(243, 238, 228, 0.25);
+  background-color: transparent;
+  color: #f3eee4;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-family: inherit;
+}

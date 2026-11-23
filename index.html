@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor de Câmbio e Cotações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container-cambio">
+    <h1>Monitor de Cotações</h1>
+    <p class="subtitulo-cambio">Acompanhe valores para planos em França, partituras, livros e reservas.</p>
+
+    <form id="formulario-moeda" class="formulario-moeda">
+      <label for="codigo-moeda">Adicionar par de moeda (ex.: GBP-BRL, JPY-BRL)</label>
+      <div class="linha-moeda">
+        <input type="text" id="codigo-moeda" placeholder="Ex.: GBP-BRL">
+        <button type="submit">Adicionar</button>
+        <button type="button" id="botao-atualizar">Atualizar</button>
+      </div>
+    </form>
+
+    <p id="status-cambio" class="status-cambio"></p>
+
+    <div id="cotacoes" class="grade-cotacoes"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
